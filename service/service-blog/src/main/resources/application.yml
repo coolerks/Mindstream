@@ -1,0 +1,17 @@
+server:
+  port: 29001
+spring:
+  thymeleaf:
+    cache: false
+  profiles:
+    active: dev
+  application:
+    name: service-blog
+  cloud:
+    nacos:
+      config:
+        enabled: false
+        refresh-enabled: false
+      discovery:
+        enabled: false
+        instance-enabled: false
